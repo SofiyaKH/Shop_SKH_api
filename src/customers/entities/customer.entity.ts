@@ -23,6 +23,9 @@ export class Customer {
   @Column()
   lastName: string;
 
+  @Column({ default: false })
+  isAdmin: Boolean;
+
   @Column({ unique: true })
   email: string;
 
